@@ -15,6 +15,12 @@
     <meta name="author" content="JuniOrNot">
     <meta name="keyword" content="junior, java, sql, test">
     <title>JuniOrNot</title>
+
+    <link href="../../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../../static/css/style.css" rel="stylesheet">
+    <link href="../../static/css/style-responsive.css" rel="stylesheet">
+
 </head>
 <body>
 <div id="login-page">
@@ -49,9 +55,11 @@
         </form>
     </div>
 </div>
+<script src="../../static/lib/jquery/jquery.min.js"></script>
+<script src="../../static/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../static/lib/jquery.backstretch.min.js"></script>
 <script>
-    $.backstretch("../../static/image/start page.jpg", {
+    $.backstretch("../../static/image/start_page.jpg", {
         speed: 500
     });
 </script>
