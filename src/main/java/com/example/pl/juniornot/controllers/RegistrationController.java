@@ -32,7 +32,7 @@ public class RegistrationController {
             e.printStackTrace();
             return "redirect:/register";
         }
-        
+
         return "login-page";
     }
 }
