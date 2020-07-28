@@ -13,6 +13,7 @@
 </head>
 <body>
 <section id="container">
+    <header><jsp:include page="fragments/header.jsp"/></header>
     <section id="main-content" style="min-height: 635px;">
         <section class="wrapper">
             <div class="row">
@@ -66,5 +67,9 @@
         <script src="../../static/lib/common-scripts.js"></script>
         <!--script for this page-->
     </section>
+     <div style="clear: both;"></div>
+        <footer class="site-footer" style="object-position: bottom">
+            <jsp:include page="fragments/footer.jsp"/>
+        </footer>
 </body>
 </html>
