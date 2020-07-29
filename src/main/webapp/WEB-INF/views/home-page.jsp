@@ -14,7 +14,7 @@
 <body>
 <section id="container">
     <header><jsp:include page="fragments/header.jsp"/></header>
-    <section id="main-content" style="min-height: 635px;">
+    <section id="main-content">
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
