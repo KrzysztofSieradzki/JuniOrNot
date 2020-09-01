@@ -4,7 +4,9 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
 @EqualsAndHashCode(of="id") @ToString(exclude = {"password"})
@@ -24,52 +26,34 @@ public class User extends EntityBase{
     private String email;
     @Column(nullable = false)
     private boolean active;
+    @OneToMany(mappedBy = "user")
+    private List<Game> games;
 
-    public String getUsername() {
-        return username;
-    }
+    public List<Game> getGames() { return games; }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    public void setGames(List<Game> games) { this.games = games; }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getUsername() { return username; }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public void setUsername(String username) { this.username = username; }
 
-    public String getLastName() {
-        return lastName;
-    }
+    public String getFirstName() { return firstName; }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public String getPassword() {
-        return password;
-    }
+    public String getLastName() { return lastName; }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public String getEmail() {
-        return email;
-    }
+    public String getPassword() { return password; }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    public void setPassword(String password) { this.password = password; }
 
-    public boolean isActive() {
-        return active;
-    }
+    public String getEmail() { return email; }
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
+    public void setEmail(String email) { this.email = email; }
+
+    public boolean isActive() { return active; }
+
+    public void setActive(boolean active) { this.active = active; }
 }

@@ -17,42 +17,36 @@
     <section id="main-content">
         <section class="wrapper">
             <div class="row">
-                <div class="col-lg-12">
-                <div class="row content-panel">
-<%--                    ================Stats==========--%>
-                    <div class="col-md-4 detailed">
-                        <h4>Stats</h4>
-                        <div class="row centered mt mb">
-                            <div class="col-sm-4">
-                                <h1><i class="fa fa-trophy"></i></h1>
-                            </div>
-                            <div class="col-sm-4">
-                                <h1><i class="fa fa-bullseye"></i></h1>
-                            </div>
-                            <div class="col-sm-4">
-                                <h1><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></h1>
-                            </div>
-                        </div>
+                <!-- ------------GAMES SECTION-------------- --!>
+                <div class="col-lg-3 ds">
+                    <div class="border-head">
+                        <h2>GAMES</h2>
                     </div>
-<%--                        ===============================--%>
-    <div class="col-md-4 detailed">
-        <h4>Become a Junior Master</h4>
-        <p>SQL and Java</p>
-    </div>
-<%--                    ===================--%>
-                      <div class="col-md-4 centered">
-                        <div class="profile-pic">
-
+                   <a href="/quiz"> <div class="desc">
+                        <div class="centered">
+                            <strong>QUIZ</strong>
                         </div>
-<%--                            <button class="btn btn-theme"><i class="fa fa-camera-retro"></i> Change picture</button>--%>
-                      </div>
-                 </div>
-                </div>
-                </div>
-<%--                    =======================Second panel===================--%>
-                <div class="col-lg-12 mt">
+                    </div></a>
 
+                    <a href="/million"><div class="desc">
+                        <div class="centered">
+                           <strong>MILLIONAIRES</strong>
+                        </div>
+                    </div></a>
+
+                    <a href="/flash_cards"><div class="desc">
+                        <div class="centered">
+                          <strong>FLASH CARDS</strong>
+                        </div>
+                    </div></a>
                 </div>
+                 <!-- ----------END OF GAMES SECTION----------- --!>
+
+                 <!-- ------------PROFILE SECTION-------------- --!>
+                <div class="col-lg-9">
+                </div>
+                <!-- ------------END OF PROFILE SECTION-------------- --!>
+            </div>
         </section>
     </section>
         <!-- js placed at the end of the document so the pages load faster -->
