@@ -1,11 +1,14 @@
 package com.example.pl.juniornot.service;
 
+import com.example.pl.juniornot.dto.LoggedUserDTO;
 import com.example.pl.juniornot.dto.RegisterUserDTO;
 import com.example.pl.juniornot.model.entities.User;
 import com.example.pl.juniornot.model.repositories.UserRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -33,4 +36,10 @@ public class UserService {
 
         userRepositories.save(user);
     }
+    
+//    public LoggedUserDTO getUser(String username){
+//
+//        LoggedUserDTO loggedUserDTO = null;
+//        Optional<User> user = userRepositories.findBy
+//    }
 }
