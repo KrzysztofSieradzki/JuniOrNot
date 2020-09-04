@@ -36,7 +36,7 @@ public class UserService {
 
         userRepositories.save(user);
     }
-    
+
 //    public LoggedUserDTO getUser(String username){
 //
 //        LoggedUserDTO loggedUserDTO = null;
