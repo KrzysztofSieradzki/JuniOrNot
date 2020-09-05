@@ -23,6 +23,13 @@ public class Question extends EntityBase {
     private Language language;
     @OneToMany(mappedBy = "question")
     private List<Answer> answers;
+    @ManyToOne
+    @JoinColumn(name="game_id")
+    private Game game;
+
+    public Game getGame() { return game; }
+
+    public void setGame(Game game) { this.game = game; }
 
     public String getQuery() { return query; }
 
