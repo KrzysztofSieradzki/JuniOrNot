@@ -3,7 +3,7 @@ package com.example.pl.juniornot.model.entities;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
+
 
 @Getter
 @Setter
@@ -19,8 +19,7 @@ public class Game extends EntityBase{
     @ManyToOne
     @JoinColumn(name="user_id")
     private User user;
-    @OneToMany(mappedBy = "game")
-    private List<Settings> settings;
+
 
     public String getName() { return name; }
 
@@ -30,7 +29,5 @@ public class Game extends EntityBase{
 
     public void setUser(User user) { this.user = user; }
 
-    public List<Settings> getSettings() { return settings; }
 
-    public void setSettings(List<Settings> settings) { this.settings = settings; }
 }
