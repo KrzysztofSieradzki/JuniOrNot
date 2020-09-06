@@ -5,6 +5,7 @@ import com.example.pl.juniornot.model.enums.Language;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.lang.reflect.Array;
@@ -25,6 +26,12 @@ public class FlashCardsController {
     @GetMapping
     public String getFlashCardsGame(){
         return "flash-cards";
+    }
+
+    @PostMapping("/settings")
+    public String startAGame(Language language, Difficulty difficulty){
+        //to do
+        return "";
     }
 
 }

@@ -19,24 +19,26 @@
             <div class="row">
 
              <!-- ----------Start----------- --!>
-               <form method="get" class="form-login" action="/flash_cards">
+               <form method="post" class="form-login" action="/flash_cards/settings">
                <h2 class="form-login-heading">Game settings</h2>
                <div class="login-wrap">
-                <h3>Technology</h3>
-                <label for="language">SQL</label>
-                <input type="radio" required name="language" id="language" class="form-control" autofocus>
-                <label for="language">Java</label>
-                <input type="radio" required name="language" id="language" class="form-control" autofocus><br>
+                <label class="control-label col-md-3" for="language" style="text-align: center; width: 100%;">Technology</label>
+                <select class="form-control" required name="language" id="language">
+                <!--    <option>--Choose technology--</option> --!>
+                    <c:forEach items="${languages}" var="lan">
+                        <option value="${lan}">${lan.languages}</option>
+                    </c:forEach>
+                </select>
                 <hr>
-                <h3>Difficulty</h3>
-                <label for="difficulty">Easy</label>
-                <input type="radio" required name="difficulty" id="difficulty" class="form-control" >
-                <label for="difficulty">Medium</label>
-                <input type="radio" required name="difficulty" id="difficulty" class="form-control" >
-                <label for="difficulty">Hard</label>
-                <input type="radio" required name="difficulty" id="difficulty" class="form-control" >
 
+                <label class="control-label col-md-3" style="text-align: center; width: 100%;" for="difficulty">Difficulty</label>
+                <select class="form-control" required name="difficulty" id="difficulty">
+                    <c:forEach items="${difficulties}" var="diff">
+                      <option value="${diff}">${diff.difficulties}</option>
+                    </c:forEach>
+                </select>
 
+                 <hr>
                     <button class="btn btn-theme btn-block" type="submit">Play!</button>
                     <button class="btn btn-theme02 btn-block" type="reset">Reset</button>
                </div>
