@@ -49,7 +49,7 @@ public class FlashCardsController {
         if(!chosenQuestions.isEmpty()) {model.addAttribute("questions",chosenQuestions);}
         Integer startNo = 0;
         model.addAttribute("no",startNo);
-        return  "flash-cards_gameboard";
+        return "flash-cards-gameboard";
     }
 
     @GetMapping("/answer")

@@ -23,7 +23,7 @@
                <h2 class="form-login-heading">Question</h2>
                <div class="login-wrap">
                 <label class="control-label col-md-3" for="question" style="text-align: center; width: 100%;">
-                   <h3><c:out value="${questions.get(0}"></h3>
+                <h3>${questions.get(0).query}</h3>
                 </label>
 
                 <input type="hidden" value=${no}+1></input>
